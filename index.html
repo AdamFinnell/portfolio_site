@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+  <head>
+    <title>~ Final Portfolio ~</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-------------------offcanvas-------------------------------->
+    <div class="offcanvas offcanvas-start w3-black" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title p-3 w3-text-purple w3-aqua rounded-3 mx-auto">
+          My Projects
+        </h1>
+
+        <button
+          type="button"
+          class="btn-close text-center"
+          data-bs-dismiss="offcanvas"
+        ></button>
+        <hr />
+      </div>
+      <div class="offcanvas-body">
+        <h3
+          class="p-3 text-info-emphasis border border-info rounded-3 w3-center"
+        >
+          Personal Projects
+        </h3>
+        <hr />
+        <a href="/projects/personal/Magic 8 Ball/index.html" target="_blank" class="w3-hover-purple w3-text-white">Magic 8 Ball</a>
+        <hr />
+        <hr />
+        <a href="/projects/personal/rock_paper_scissors/index.html" class="w3-hover-purple w3-text-white">Rock, Paper, Scissors</a>
+        <hr />
+        <hr />
+        <a href="/projects/personal/GridProject/index.html" class="w3-hover-purple w3-text-white">Grid</a>
+        <hr />
+        <hr />
+        <a href=""></a>
+        <hr />
+        <h2 class="p-3 w3-text-purple w3-center w3-aqua rounded-3 mx-auto">
+          Certification projects
+        </h2>
+        <hr />
+        <h4
+          class="p-3 text-info-emphasis border border-info rounded-3 w3-center"
+        >
+          JavaScript
+        </h4>
+        <hr />
+        <a href="/projects/jsBeta/Palindrome/index.html" class="w3-hover-purple w3-text-white">Palindrome Checker</a>
+        <hr />
+
+        <a href="/projects/jsBeta/romanNumeral/index.html" class="w3-hover-purple w3-text-white">Roman Numeral Converter</a>
+
+        <hr />
+        <a href="/projects/jsBeta/teleValidator/index.html" class="w3-hover-purple w3-text-white">Telephone Number Validator</a>
+
+        <hr />
+        <a href="/projects/Legacy/caesars-cipher/txt" class="w3-hover-purple w3-text-white">Caeser Cipher</a>
+
+        <hr />
+        <a href="/projects/Legacy/cash-register.txt" class="w3-hover-purple w3-text-white">Cash Register</a>
+        <hr />
+
+        <h4
+          class="p-3 text-info-emphasis border border-info rounded-3 w3-center"
+        >
+          HTML & CSS
+
+        </h4>
+        <hr />
+        <a href="/projects/RWD/Survey/build-a-survey-form.html" class="w3-hover-purple w3-text-white">Survey Page</a>
+        <hr />
+        <a href="/projects/RWD/TributePage/tribute-page.html" class="w3-hover-purple w3-text-white">Tribute Page</a>
+        <hr />
+        <a href="/projects/RWD/technicalDoc/build-a-technical-documentation-page .html"
+          class="w3-hover-purple w3-text-white">Technical Documentation Page</a
+        >
+        <hr />
+        <a href="/projects/RWD/productLandingPage/build-a-product-landing-page.html" class="w3-hover-purple w3-text-white"
+          >Product Landing Page</a
+        >
+        <hr />
+      </div>
+    </div>
+    <!------------------  END ------------------------- ------------------------->
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+
+
+        <a
+          href="#home"
+          class="w3-bar-item w3-button btn w3-purple w3-hover-aqua"
+          ><i class="fa fa-home"></i> HOME</a
+        >
+
+        <button
+          class="w3-bar-item w3-button w3-hide-small btn w3-purple w3-hover-aqua"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#demo"
+        >
+          <i class="fa fa-paper-plane"></i> Open Projects Sidebar
+        </button>
+
+        <a
+          href="#about"
+          class="w3-bar-item w3-button w3-hide-small btn w3-purple w3-hover-aqua"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button w3-hide-small btn w3-purple w3-hover-aqua"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-hide-small btn w3-purple w3-hover-aqua"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT</a
+        >
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space: nowrap">
+        <span
+          class="w3-center w3-padding-large w3-aqua w3-xlarge w3-wide w3-animate-opacity w3-text-black w3-round"
+          ><span class="w3-hide-small"><b>PROGRAMMING THE FUTURE</b></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT ME</h3>
+
+      <p class="w3-center"><div class="wordamation"></div></p>
+      <p>
+     Hi, I'm Adam D. Finnell II, a passionate full-stack developer originally from Frankfort, KY. In 2024, I joined the Persevere program and began my journey into coding—discovering not just a skill, but a calling. Now based in Tennessee, I specialize in building responsive web applications, exploring creative tech solutions, and mentoring others who are just starting their path. Whether I’m debugging a JavaScript function or sketching anime fan art, I bring curiosity, precision, and heart to everything I do.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p>
+            <b><i class="fa fa-user w3-margin-right w3-spin"></i>Adam D. Finnell II</b>
+          </p>
+          <br />
+
+            <img
+              src="imgs.jpg/finnell.png"
+              id="portrait"
+              class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+              alt="Photo of Me"
+
+
+            />
+
+           <span id="shadow"></span>
+
+        </div>
+<!-- ========================================================================================= -->
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>
+           I'm a full-stack developer with a strong foundation in JavaScript, HTML, and CSS. I’ve worked with modern frameworks like React and Node.js, and I’m comfortable building full web applications from front to back. My toolbox includes Git, GitHub, VS Code, Postman, and Netlify for deployment, and I’ve built projects using both MongoDB and PostgreSQL databases. I’m especially drawn to clean, responsive design—Tailwind CSS is my go-to for making interfaces that feel as good as they look.
+
+Beyond the technical, I bring a creative, collaborative energy to every project. Whether I’m debugging a stubborn issue or helping newer devs as a teaching assistant, I approach challenges with curiosity and patience. I love turning problems into opportunities to learn—and I’m always leveling up my code game, one line at a time.
+
+Currently: Full-stack dev IRL. Mentally: An S-rank support character in a team of dreamers. Let’s build something epic together.
+
+
+          </p>
+        </div>
+      </div>
+<br>
+      <p class="w3-large w3-center w3-padding-16">Click the button to view my level for each language: <button class="w3-button w3-aqua w3-round w3-hover-purple align-content-center" onclick="moveAll()">Level Up!</button></p>
+
+<!---------------------------HTML Bar------------------------------------------------------>
+
+  <p class="w3-wide"><i class="fa fa-laptop"></i> HTML</p>
+<br>
+<div class="w3-dark-grey w3-round">
+  <div id="myBar" class="w3-container w3-aqua w3-center w3-round" style="width:0%">LVL</div>
+</div>
+<br>
+
+<!----------------------------------- css bar --------------------------->
+
+  <p class="w3-wide"><i class="fa fa-laptop"></i> CSS</p>
+
+<br>
+<div class="w3-dark-grey w3-round">
+  <div id="myBar2" class="w3-container w3-aqua w3-center w3-round" style="width:0%">LVL</div>
+</div>
+<br>
+<!------------------------------JavaScript--------------------------------------------------->
+
+  <p class="w3-wide"><i class="fa fa-laptop"></i> JavaScript</p>
+<br>
+<div class="w3-dark-grey w3-round">
+  <div id="myBar3" class="w3-container w3-aqua w3-center w3-round" style="width:0%">LVL</div>
+</div>
+
+<br>
+
+
+<!--------------------------Front End Lib------------------------------------------------------->
+  <p class="w3-wide"><i class="fa fa-laptop"></i> Front End Libraries</p>
+<br>
+<div class="w3-dark-grey w3-round">
+  <div id="myBar4" class="w3-container w3-aqua w3-center w3-round" style="width:0%">LVL</div>
+</div>
+<br>
+</div>
+<!-- ------------------------------------------------------------------------------------------->
+    <div class="w3-row w3-center w3-purple w3-text-aqua w3-padding-16">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br />
+        Certifications
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br />
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br />
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2,000+</span><br />
+        Hours Coding
+      </div>
+    </div>
+    <!------------------  END ------------------------- ------------------------->
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-purple w3-aqua w3-wide">PROJECTS</span>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">MY WORK</h3>
+      <p class="w3-center">
+        <em
+          >Here are some of my latest lorem work ipsum tipsum.<br />
+          Click on the images to make them bigger</em
+        >
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/business.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="All business"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/giphy (11) - Copy.gif"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="Jumping for joy!"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/techDoc.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="A technical document on Odinism."
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/SurveyJPG.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="Gaming survey"
+          />
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/pleasure.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="Art at its finist."
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/jsProject1JPG.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="My first RPG!"
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/skyline.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="A skyline built with CSS."
+          />
+        </div>
+
+        <div class="w3-col m3">
+          <img
+            src="imgs.jpg/face.JPG"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity img"
+            alt="Broly's Face."
+          />
+        </div>
+        <button
+          class="w3-button w3-padding-large w3-aqua w3-round w3-center w3-hover-purple"
+          style="margin-top: 64px"
+        >
+          LOAD MORE
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-large w3-black w3-display-topright"
+        title="Close Modal Image"
+        ><i class="fa fa-remove"></i
+      ></span>
+
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+    <!------------------  END ------------------------- ------------------------->
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-aqua w3-purple w3-wide w3-round">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img
+            src=""
+            class="w3-image w3-round"
+            style="width: 100%"
+          />
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i
+              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+Persevere of Memphis, TN<br />
+            <i
+              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Phone: (916)615-5523<br />
+            <i
+              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Email: A_Finnell2@gmail.com<br />
+          </div>
+          <p>
+            Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a
+            note:
+          </p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="Email"
+                />
+              </div>
+            </div>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+            <button
+              class="w3-button w3-aqua w3-text-purple w3-right w3-section w3-hover-purple"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!------------------  END ------------------------- ------------------------->
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-aqua w3-hover-purple w3-text-black"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-purple"
+          >ME</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

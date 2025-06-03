@@ -1,0 +1,154 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("imgs.jpg/main.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("imgs.jpg/coding.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("imgs.jpg/coding2.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/*--------------------------------------*/
+
+#myNavbar {
+  display: flex;
+  /*backdrop-filter: blur(6.3px);*/
+  justify-content: space-evenly;
+}
+
+/*--------------------*/
+.img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  top: 0%;
+  left: 1%;
+  animation: float 3s ease-out infinite;
+}
+
+#portrait {
+  /*width: 75%;
+  height: 75%;*/
+  /* object-fit: cover;*/
+  /*top: 0%;*/
+  /*left: 1%;*/
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(60px);
+  }
+}
+
+#shadow {
+  position: relative;
+  height: 20px;
+  top: 98%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(10, 243, 231);
+  border-radius: 50%;
+  filter: blur(3px);
+  animation: shrink 3s ease-out infinite;
+}
+@keyframes shrink {
+  0% {
+    width: 21%;
+  }
+  50% {
+    width: 10%;
+  }
+  100% {
+    width: 21%;
+  }
+}
+
+/*=============== word animation start========
+===================== */
+.wordamation {
+  width: 415px;
+  display: flex;
+  margin-left: 340px;
+}
+.active {
+  color: rgb(4, 248, 252);
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  animation: animateOne 2s linear;
+}
+@keyframes animateOne {
+  0% {
+    transform: translateY(35%);
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-35%);
+    opacity: 0%;
+  }
+}
+
+
+
