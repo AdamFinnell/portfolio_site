@@ -26,19 +26,19 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("imgs.jpg/main.jpg");
+  background-image: url("imgs/main.jpg");
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("imgs.jpg/coding.jpg");
+  background-image: url("imgs/coding.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("imgs.jpg/coding2.jpg");
+  background-image: url("imgs/coding2.jpg");
   min-height: 400px;
 }
 
@@ -121,6 +121,10 @@ html {
   width: 415px;
   display: flex;
   margin-left: 340px;
+}
+.img,
+#portrait {
+  box-shadow: 0 15px 30px rgba(0, 255, 213, 0.2);
 }
 .active {
   color: rgb(4, 248, 252);
