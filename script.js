@@ -37,67 +37,29 @@ function toggleFunction() {
 
 // progress bars------------------------
 
-function move() {
-  var elem = document.getElementById("myBar");
-  var width = 20;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 95) {
-      clearInterval(id);
+const animateBar = (id, max) => {
+  const elem = document.getElementById(id);
+  let width = 20;
+
+  const interval = setInterval(() => {
+    if (width >= max) {
+      clearInterval(interval);
     } else {
       width++;
       elem.style.width = width + "%";
-      elem.innerHTML = "LVL " + width * 1;
+      elem.innerHTML = "LVL " + width;
     }
-  }
-}
-function move2() {
-  var elem = document.getElementById("myBar2");
-  var width = 20;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 93) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + "%";
-      elem.innerHTML = "LVL " + width * 1;
-    }
-  }
-}
-function move3() {
-  var elem = document.getElementById("myBar3");
-  var width = 20;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 81) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + "%";
-      elem.innerHTML = "LVL " + width * 1;
-    }
-  }
-}
-function move4() {
-  var elem = document.getElementById("myBar4");
-  var width = 20;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 79) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + "%";
-      elem.innerHTML = "LVL " + width * 1;
-    }
-  }
-}
+  }, 15);
+};
+
 const moveAll = () => {
-  move();
-  move2();
-  move3();
-  move4();
+  animateBar("myBar", 95);       // HTML
+  animateBar("myBar2", 93);      // CSS
+  animateBar("myBar3", 81);      // JS
+  animateBar("myBar4", 79);      // Frontend libs
+  animateBar("qaBar", 99);       // QA/QC
+  animateBar("backendBar", 50);  // Backend
+  animateBar("dataBar", 15);     // Data Architect
 };
 
 // ===============Word Animation Start===========

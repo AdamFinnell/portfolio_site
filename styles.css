@@ -7,6 +7,7 @@ h5,
 h6 {
   font-family: "Lato", sans-serif;
 }
+
 body,
 html {
   height: 100%;
@@ -16,12 +17,17 @@ html {
 
 /* Create a Parallax Effect */
 .bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.bgimg-2{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
 /* First image (Logo. Full height) */
@@ -33,13 +39,13 @@ html {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("imgs/coding.jpg");
-  min-height: 400px;
+  min-height: 700px;
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("imgs/coding2.jpg");
-  min-height: 400px;
+/* .bgimg-3 {
+  background-image: url("imgs/Stressed Work GIF by Persona.gif");
+  min-height: 700px;
 }
 
 .w3-wide {
@@ -47,17 +53,46 @@ html {
 }
 .w3-hover-opacity {
   cursor: pointer;
+} */
+
+/* Wrapper holds both parallax sides */
+.bgimg-4-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 700px;
 }
 
+/* LEFT GIF */
+.bgimg-4-left {
+  flex: 1;
+  background-image: url("imgs/Stressed Work GIF by Persona.gif");
+  background-attachment: fixed;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/* RIGHT GIF */
+.bgimg-4-right {
+  flex: 1;
+  background-image: url("imgs/Tech Coding GIF by Persona.gif");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+   background-size:contain;
+}
+
+
+
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+/* @media only screen and (max-device-width: 1600px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
   }
-}
+} */
 
 /*--------------------------------------*/
 
