@@ -86,3 +86,27 @@ function changeTitle() {
   }
   setTimeout(changeTitle, 2000);
 }
+
+
+// ==================================== video =================================
+
+const video = document.getElementById("portrait");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+observer.observe(video);
+
+if (entry.isIntersecting) {
+  video.currentTime = 0;
+  video.play();
+}
